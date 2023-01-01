@@ -26,8 +26,8 @@ while True:
         for i in range(5):
             new_name_file += random.choice(letters)
             
-        shutil.move(f'C:\\Users\\SAT\\Desktop\\photo\\{file_name}',
-                    f'C:\\Users\\SAT\\Desktop\\{new_name_file}.'
+        shutil.move(f'C:\\path photo\\{file_name}',
+                    f'C:\\new path photo\\{new_name_file}.'
                     f'{file_name.split(".")[-1]}')
         print(f'Successfully. File moved to main screen. {new_name_file}.{file_name.split(".")[-1]}\n')
 
