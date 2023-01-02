@@ -5,7 +5,7 @@ import shutil
 
 name_files = []
 
-for root, files in os.walk( folder with unwanted photos ):
+for root, dirs, files in os.walk( folder with unwanted photos ):
     for file in files:
         if file.endswith(".jpg") or file.endswith('.png') or file.endswith('.gif'):
             path_file = os.path.join(root,file)
